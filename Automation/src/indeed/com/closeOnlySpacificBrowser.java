@@ -30,7 +30,6 @@ public class closeOnlySpacificBrowser {
 		
 		for (String wn :allwin) {
 			driver.switchTo().window(wn);
-	    @Nullable
 		String title = driver.getTitle();
 	    if(title.contains(expectedBrowser))
 	    {
