@@ -21,6 +21,7 @@ WebDriver	driver=new ChromeDriver();
 driver.get("http://localhost/login.do");
 Thread.sleep(2000);
 driver.findElement(By.partialLinkText("Login")).click();
+System.out.println("We are closing only parent window");
 //driver.manage().window().maximize();
 //driver.findElement(By.id("login-google-button")).click();
 //driver.findElement(By.id("apple-signin-button")).click();
